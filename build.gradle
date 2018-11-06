@@ -1,0 +1,20 @@
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+
+dependencies {
+
+	// https://mvnrepository.com/artifact/org.postgresql/postgresql
+	compile group: 'org.postgresql', name: 'postgresql', version: '42.2.5'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.+'
+    
+    testImplementation "org.junit.jupiter:junit-jupiter-params:5.1.0"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.1.0"
+
+    testRuntimeOnly "org.junit.vintage:junit-vintage-engine:5.1.0"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.1.0"
+
+}
+
