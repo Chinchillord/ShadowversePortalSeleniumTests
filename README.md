@@ -13,3 +13,5 @@ For stories 1 and 3, the tests are written in a parameterized fashion so that th
 To keep track of decklists and current card lists for stories 1 and 3, a Postgresql database is used. The database is fairly simple, containing each card's name, class (in-game class), and, in the case of story 3, the count of the cards in the deck. This database is hosted on AWS and was created using the RDS service.
 
 For story 3, after building the deck using Shadowverse Portal's deckbuilder, we then check that the order and count of the cards matches the decklist pulled from the database.
+
+![](FinalShadowverseSelenium.gif)
